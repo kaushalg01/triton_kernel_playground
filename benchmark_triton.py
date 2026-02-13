@@ -48,4 +48,6 @@ def benchmark(size, provider):
     return gbps(ms), gbps(max_ms), gbps(min_ms)
 
 if __name__ == "__main__":
-    benchmark.run(print_data=True)
+    benchmark.run(print_data=True,
+     show_plots=False,   # no GUI
+     save_path="results")
